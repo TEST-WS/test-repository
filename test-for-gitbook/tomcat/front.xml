@@ -1,0 +1,19 @@
+<Context path="/front" reloadable="false" docBase="xxxxxxxxxx/front" workDir="/xxxxxxxxxx/work" useHttpOnly="true" >
+  <Resource name="jdbc/webshopDataSource"
+    auth="Container"
+    type="javax.sql.DataSource"
+    maxActive="20"
+    maxIdle="10"
+    maxWait="-1"
+    username="WEBSHOP"
+    password="WSPASSWORD"
+    driverClassName="oracle.jdbc.OracleDriver"
+    factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+    url="jdbc:oracle:thin:@127.0.0.1:1521/orcl"
+    defaultAutoCommit="false"
+  />
+  <Resource name="mail/webshopMailSession"
+    auth="Container"
+    type="javax.mail.Session"
+    mail.smtp.host="127.0.0.1" />
+</Context>
